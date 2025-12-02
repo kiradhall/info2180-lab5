@@ -1,1 +1,108 @@
-/* Add your own styles */
+@import url('https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap');
+
+:root{
+    --defaultFontFamily: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, "Noto Sans", sans-serif ;
+}
+
+body {
+    background-color: #e6ebdd;
+}
+
+header{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background-color:#c7eafe;
+    color: #074268;
+    padding:50px;
+    font-size: 30px;
+    font-family: 'Science Gothic' , var(--defaultFontFamily);  
+}
+
+img {
+    width: 200px;
+}
+
+#controls{
+    font-family: var(--defaultFontFamily);
+    padding: 40px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 1fr 1fr;
+    grid-template-areas: 
+        "search search"
+        "btn citybtn";
+}
+
+th, td {
+  border: 1px solid;
+  padding: 10px;
+  border-color: #074268;
+}
+
+table {
+    background-color: #c7eafe;
+    text-align: center;
+    border-collapse: collapse;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: var(--defaultFontFamily); 
+    color: #074268;
+}
+
+tr:nth-child(even) {
+    background-color: #e6ebdd;
+}
+
+th{
+    background-color: #074268;
+    color:#c7eafe;
+    border-color: #c7eafe;
+
+}
+
+td{
+    text-align: left;
+}
+
+button{
+    all:unset;
+    margin-top: 20px;
+    padding: 10px;
+    color:#e6ebdd;
+    border-radius: 10px;
+}
+
+#lookup{
+    grid-area: btn;
+    background-color: #829953;
+    margin-left: 400px;
+    margin-right: 50px;
+}
+
+#citylookup{
+    grid-area: citybtn;
+    background-color: #414d2a;
+    margin-left: 50px;
+    margin-right: 400px;
+}
+
+input{
+    all:unset;
+    grid-area: search;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-left: 300px;
+    margin-right: 300px;
+    text-align: left;
+}
+
+p{ 
+    color:red;
+    text-align: center;
+    font-family: 'Science Gothic' , var(--defaultFontFamily);
+    font-size: 40px;
+}
